@@ -4,10 +4,6 @@
     margin: auto;
     box-shadow: 0px 0px 100px rgba(0,0,0,0.3);
 }
-.my-padding {
-    height: 100%;
-    background: radial-gradient(circle,#666,#212121);
-}
 .my-title {
     color: white;
     width: 35%;
@@ -16,4 +12,14 @@
     top: 50%;
     left: 15%;
     transform: translateY(-50%);
+}
+.my-buttons {
+    list-style-type: none;
+    color: white;
+    left: 50%;
+    display: inline-flex;
+}
+.my-link {
+    color: white;
+    text-decoration: none;
 }
