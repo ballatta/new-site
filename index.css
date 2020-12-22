@@ -15,7 +15,7 @@
 }
 .my-buttons {
     list-style-type: none;
-    color: white;
+    color: #666;
     left: 50%;
     display: inline-flex;
 }
@@ -24,6 +24,5 @@
     text-decoration: none;
 }
 .my-padding {
-    height: 100%;
-    background: radial-gradient(circle, #666, #6b4d9c);
+    background-image: linear-gradient(to bottom right, #04042C, #3040404);
 }
