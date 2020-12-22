@@ -5,7 +5,7 @@
     box-shadow: 0px 0px 100px rgba(0,0,0,0.3);
 }
 .my-title {
-    color: white;
+    color: #C9D1C8;
     width: 35%;
     position: absolute;
     padding: 0;
@@ -15,11 +15,11 @@
 }
 .my-buttons {
     list-style-type: none;
-    color: white;
+    color: #C9D1C8;
     left: 50%;
     display: inline-flex;
 }
 .my-link {
-    color: white;
+    color: #C9D1C8;
     text-decoration: none;
 }
