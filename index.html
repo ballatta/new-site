@@ -3,19 +3,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" type="text/css" />
-    <link href="global.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
 </head>
 
 <body class="my-padding">
+
     <nav class="navbar my-buttons">
         <li>
-            <a href="about.html" class="my-link text-white btn">
-                About
+            <a href="#home" class="my-link text-white btn">
+                Home
             </a>
         </li>
         <li>
-            <a href="about.html" class="my-link text-white btn">
-                Music
+            <a href="#about" class="my-link text-white btn">
+                About
             </a>
         </li>
         <li>
@@ -30,23 +31,29 @@
         </li>
     </nav>
 
-    <main class="my-title">
-        <h1>
-            Brendan Allatta
-        </h1>
-        <p>
-            Musician | Teacher | Freelancer
-        </p>
+    <main class="my-title my-container">
+        <section class="my-child my-home" id="home">
+            <div class="col-10 float-right h-100">
+                <h1>
+                    Brendan Allatta
+                </h1>
+                <p>
+                    Musician | Teacher | Freelancer
+                </p>
+                <i class="fa fa-arrow-down" id="bottom"></i>
+            </div>
+        </section>
+        <section class="my-child" id="about">
+            <div class="col-10 float-right">
+                <h2>
+                    About Me
+                </h2>
+                <p>
+                    A New Jersey native and graduate of Montclair State University, I perform and teach music. I run my own private music studio alongside an amateur recording studio
+                </p>
+            </div>
+        </section>
     </main>
-
-    <div>
-        <h2>
-            About.Me
-        </h2>
-        <p>
-            A New Jersey native and graduate of Montclair State University, I perform and teach music. I run my own private music studio alongside an amateur recording studio
-        </p>
-    </div>
 </body>
 
 <!--
