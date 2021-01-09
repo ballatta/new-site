@@ -1,44 +1,66 @@
-.my-title {
-    color: #C9D1C8;
-    padding: 0;
-    left: 50%;
-}
-
-.my-buttons {
-    list-style-type: none;
-    position: fixed;
-    color: #C9D1C8;
-    left: 62%;
-    display: inline-flex;
-}
-
-.my-link {
-    color: #C9D1C8;
-    text-decoration: none;
-}
-
-.my-padding2 {
-    background-image: linear-gradient(to bottom right, #04042C, #304040);
-}
-
-.my-container {
-    height: 100%;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
-.my-child {
-    height: 100%;
-    scroll-snap-align: center;
-    padding-top: 100px;
-    background-image: linear-gradient(to bottom right, #04042C, #304040);
-}
-
-.my-home {
-    padding-top: 250px !important;
-    background-image: linear-gradient(to bottom right, #283655, #5B7065);
-}
-
-#bottom {
-    bottom: 0 !important;
-}
+    .my-title {
+        color: #C9D1C8;
+        padding: 0;
+        left: 50%;
+    }
+    
+    .my-buttons {
+        list-style-type: none;
+        position: fixed;
+        color: #C9D1C8;
+        left: 62%;
+        display: inline-flex;
+    }
+    
+    .my-link {
+        color: #C9D1C8;
+        text-decoration: none;
+    }
+    
+    .my-padding2 {
+        background-image: linear-gradient(to bottom right, #04042C, #304040);
+    }
+    
+    .my-container {
+        height: 100%;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    
+    .my-home {
+        position: relative;
+        padding-top: 250px !important;
+        background-image: linear-gradient(to bottom right, #04202C, #1E1F26);
+    }
+    
+    .my-child {
+        height: 100%;
+        scroll-snap-align: center;
+        padding-top: 100px;
+    }
+    
+    .my-about {
+        background-image: linear-gradient(to bottom right, #1E1F26, #304040);
+    }
+    
+    .my-blog {
+        background-image: linear-gradient(to bottom right, #1E1F26, #304040);
+    }
+    
+    .my-contact {
+        background-image: linear-gradient(to bottom right, #1E1F26, #304040);
+    }
+    
+    #bottom {
+        bottom: 0 !important;
+    }
+    /*
+    Color Palettes
+        #04202C Forest, #304040 Evergreen, #5B7065 Pine, #C9D1C8 Fog
+        #1E1F26 Midnight Blue, #283655 Indigo Ink, #4D647D Blueberry, #D0E1F9 Periwinkle
+    */
+    
+    .stuff {
+        color: #04202C #304040 #5B7065 #C9D1C8;
+        color: #1E1F26 #283655 #4D647D #D0E1F9;
+    }
