@@ -3,7 +3,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
 </head>
 
 <body class="my-padding">
@@ -44,47 +45,149 @@
             </div>
         </section>
         <section class="my-child my-about" id="about">
-            <div class="col-10 float-right">
+            <div class="col-11 float-right">
                 <h2>
                     About Me
                 </h2>
                 <p>
                     A New Jersey native and graduate of Montclair State University, I perform and teach music. <br>
-                    I run my own private music studio alongside an amateur recording studio. In addition to my pursuits in the music and audio fields, I also program on the side. <br>
-                    Since COVID seems likely to have lingering effects, espeically in the music fields for the near future, it seemed interesting enough to learn to program. <br>
-                    As much of a solo pursuit learning an instrument already is (I mean... it doesn't play itself for a reason), I saw many parallels to learning to program. <br>
-                    This is all a work in progress, as is life. With that, we hope to see you on the other side.
+                    I run my own private lesson studio alongside an amateur recording studio. In addition to my pursuits
+                    in the music and audio fields, I also program on the side. <br>
+                    Since COVID seems likely to have lingering effects, espeically in the music fields for the near
+                    future, it seemed interesting enough to learn to program. <br>
+                    As much of a solo pursuit learning an instrument already is (I mean... it doesn't play itself for a
+                    reason), I saw many parallels to learning to program. <br>
+                    This is all a work in progress, as is life. With that, I hope to see you on the other side.
                 </p>
             </div>
         </section>
         <section class="my-child my-blog" id="blog">
-                <h2>
-                    What I Am Up To
-                </h2>
+            <h2>
+                What I Am Up To
+            </h2>
+            <!-- The grid: three columns -->
+            <div class="row">
+                <div class="column" onclick="openTab('b1');">
+                    <div class="card" style="background:#C9D1C8">Music</div>
+                </div>    
+                <div class="column" onclick="openTab('b2');">
+                        <div class="card" style="background:#C9D1C8">Audio</div>
+                </div>
+                <div class="column" onclick="openTab('b3');">
+                    <div class="card" style="background:#C9D1C8">Programming</div>
+                </div>
+            </div>
+
+            <!-- The expanding grid (hidden by default) -->
+            <div id="b1" class="containerTab" style="display:none;background: green">
+                <!-- If you want the ability to close the container, add a close button -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2></h2>
+                <p></p>
+            </div>
+
+            <div id="b2" class="containerTab" style="display:none;background:blue">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2></h2>
+                <p></p>
+            </div>
+
+            <div id="b3" class="containerTab" style="display:none;background:red">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+                <h2></h2>
+                <p></p>
+            </div>
         </section>
         <section class="my-child my-contact" id="contact">
-                <div class="container">
-                    <form action="FILL THIS IN LATER">
-                        <label for="fname">First NAme</label>
-                        <input type="text" id="name" name="firstname" placeholder="Your name..">
+            <div class="container">
+                <form action="FILL THIS IN LATER">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="name" name="firstname" placeholder="Your name..">
 
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                        </select>
+                    <label for="inquiry-type">Inquiry Type</label>
+                    <select id="inquiry-type" name="inquiry-type">
+                        <option value="private-lessons">Private Lessons</option>
+                        <option value="audio-recording">Audio</option>
+                        <option value="website-building">Website Building</option>
+                    </select>
 
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
 
-                        <input type="submit" value="Submit">
+                    <input type="submit" value="Submit">
 
-                    </form>
-                </div>
+                </form>
+            </div>
         </section>
     </main>
 </body>
+
+<!--
+
+    .stuff {
+        color: #04202C #304040 #5B7065 #C9D1C8;
+        color: #1E1F26 #283655 #4D647D #D0E1F9;
+    }
+
+<div class="row">
+  <div class="column">
+    <div class="card">..</div>
+  </div>
+  <div class="column">
+    <div class="card">..</div>
+  </div>
+  <div class="column">
+    <div class="card">..</div>
+  </div>
+  <div class="column">
+    <div class="card">..</div>
+  </div>
+</div>
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+-->
