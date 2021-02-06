@@ -1,0 +1,140 @@
+.my-padding {
+  height: 100%;
+  background: linear-gradient(to bottom right, #04202c, #304040);
+}
+
+.my-title {
+  color: #c9d1c8;
+  padding: 0;
+  left: 50%;
+}
+
+.my-buttons {
+  list-style-type: none;
+  position: fixed;
+  color: #c9d1c8;
+  left: 62%;
+  display: inline-flex;
+}
+
+.my-link {
+  color: #c9d1c8;
+  text-decoration: none;
+}
+
+.my-padding2 {
+  background-image: linear-gradient(to bottom right, #04042c, #304040);
+}
+
+.my-container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.my-home {
+  position: relative;
+  padding-top: 250px !important;
+  background-image: linear-gradient(to bottom right, #04202c, #1e1f26);
+}
+
+.my-child {
+  height: 100%;
+  scroll-snap-align: center;
+  padding-top: 100px;
+}
+
+.my-about {
+  background-image: linear-gradient(to bottom right, #1e1f26, #304040);
+}
+
+.my-blog {
+  background-image: linear-gradient(to bottom right, #1e1f26, #304040);
+}
+
+.my-contact {
+  background-image: linear-gradient(to bottom right, #1e1f26, #304040);
+}
+
+#bottom {
+  bottom: 0 !important;
+}
+/*
+    Color Palettes
+        #04202C Forest, #304040 Evergreen, #5B7065 Pine, #C9D1C8 Fog
+        #1E1F26 Midnight Blue, #283655 Indigo Ink, #4D647D Blueberry, #D0E1F9 Periwinkle
+    */
+
+.stuff {
+  color: #04202c #304040 #5b7065 #c9d1c8;
+  color: #1e1f26 #283655 #4d647d #d0e1f9;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px; /* Some padding */
+  background-color: #c9d1c8;
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 30px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #304040;
+  color: #c9d1c8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #304050;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #04202c;
+  padding: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
